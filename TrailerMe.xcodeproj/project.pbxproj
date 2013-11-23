@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3975894018416732009AF0B5 /* AddActionThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893618416732009AF0B5 /* AddActionThemeViewController.m */; };
+		3975894118416732009AF0B5 /* AddComedyThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893818416732009AF0B5 /* AddComedyThemeViewController.m */; };
+		3975894218416732009AF0B5 /* AddHorrorThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893A18416732009AF0B5 /* AddHorrorThemeViewController.m */; };
+		3975894318416732009AF0B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893B18416732009AF0B5 /* main.m */; };
+		3975894418416732009AF0B5 /* ThemeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893D18416732009AF0B5 /* ThemeSelectionViewController.m */; };
+		3975894518416732009AF0B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893F18416732009AF0B5 /* AppDelegate.m */; };
+		39758948184167AA009AF0B5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39758946184167AA009AF0B5 /* MainStoryboard.storyboard */; };
+		3975894A184167DF009AF0B5 /* TrailerMe-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39758949184167DF009AF0B5 /* TrailerMe-Info.plist */; };
+		3975894F184167FF009AF0B5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3975894C184167FF009AF0B5 /* Default-568h@2x.png */; };
+		39758950184167FF009AF0B5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3975894D184167FF009AF0B5 /* Default.png */; };
+		39758951184167FF009AF0B5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3975894E184167FF009AF0B5 /* Default@2x.png */; };
+		3975895418416843009AF0B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3975895218416843009AF0B5 /* InfoPlist.strings */; };
+		F1DB6C2916B12533004D3FF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C2816B12533004D3FF8 /* UIKit.framework */; };
+		F1DB6C2B16B12533004D3FF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C2A16B12533004D3FF8 /* Foundation.framework */; };
+		F1DB6C2D16B12533004D3FF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C2C16B12533004D3FF8 /* CoreGraphics.framework */; };
+		F1DB6C4C16B125BD004D3FF8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C4B16B125BD004D3FF8 /* AVFoundation.framework */; };
+		F1DB6C4E16B125C4004D3FF8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C4D16B125C4004D3FF8 /* AssetsLibrary.framework */; };
+		F1DB6C5016B125CB004D3FF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C4F16B125CB004D3FF8 /* CoreMedia.framework */; };
+		F1DB6C5216B125D0004D3FF8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C5116B125D0004D3FF8 /* MediaPlayer.framework */; };
+		F1DB6C5416B125D4004D3FF8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C5316B125D4004D3FF8 /* MobileCoreServices.framework */; };
+		F1DB6C5616B125D8004D3FF8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C5516B125D8004D3FF8 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3975893518416732009AF0B5 /* AddActionThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddActionThemeViewController.h; path = TrailerMe/AddActionThemeViewController.h; sourceTree = SOURCE_ROOT; };
+		3975893618416732009AF0B5 /* AddActionThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddActionThemeViewController.m; path = TrailerMe/AddActionThemeViewController.m; sourceTree = SOURCE_ROOT; };
+		3975893718416732009AF0B5 /* AddComedyThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddComedyThemeViewController.h; path = TrailerMe/AddComedyThemeViewController.h; sourceTree = SOURCE_ROOT; };
+		3975893818416732009AF0B5 /* AddComedyThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddComedyThemeViewController.m; path = TrailerMe/AddComedyThemeViewController.m; sourceTree = SOURCE_ROOT; };
+		3975893918416732009AF0B5 /* AddHorrorThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddHorrorThemeViewController.h; path = TrailerMe/AddHorrorThemeViewController.h; sourceTree = SOURCE_ROOT; };
+		3975893A18416732009AF0B5 /* AddHorrorThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddHorrorThemeViewController.m; path = TrailerMe/AddHorrorThemeViewController.m; sourceTree = SOURCE_ROOT; };
+		3975893B18416732009AF0B5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TrailerMe/main.m; sourceTree = SOURCE_ROOT; };
+		3975893C18416732009AF0B5 /* ThemeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThemeSelectionViewController.h; path = TrailerMe/ThemeSelectionViewController.h; sourceTree = SOURCE_ROOT; };
+		3975893D18416732009AF0B5 /* ThemeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThemeSelectionViewController.m; path = TrailerMe/ThemeSelectionViewController.m; sourceTree = SOURCE_ROOT; };
+		3975893E18416732009AF0B5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TrailerMe/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		3975893F18416732009AF0B5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TrailerMe/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		39758947184167AA009AF0B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = TrailerMe/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		39758949184167DF009AF0B5 /* TrailerMe-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TrailerMe-Info.plist"; path = "TrailerMe/TrailerMe-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3975894B184167FF009AF0B5 /* TrailerMe-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TrailerMe-Prefix.pch"; path = "TrailerMe/TrailerMe-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		3975894C184167FF009AF0B5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "TrailerMe/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		3975894D184167FF009AF0B5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = TrailerMe/Default.png; sourceTree = SOURCE_ROOT; };
+		3975894E184167FF009AF0B5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "TrailerMe/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		3975895318416843009AF0B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = TrailerMe/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		F1DB6C2416B12533004D3FF8 /* TrailerMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailerMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DB6C2816B12533004D3FF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F1DB6C2A16B12533004D3FF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1DB6C2C16B12533004D3FF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1DB6C4B16B125BD004D3FF8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F1DB6C4D16B125C4004D3FF8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F1DB6C4F16B125CB004D3FF8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F1DB6C5116B125D0004D3FF8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F1DB6C5316B125D4004D3FF8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F1DB6C5516B125D8004D3FF8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1DB6C2116B12533004D3FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DB6C5616B125D8004D3FF8 /* QuartzCore.framework in Frameworks */,
+				F1DB6C5416B125D4004D3FF8 /* MobileCoreServices.framework in Frameworks */,
+				F1DB6C5216B125D0004D3FF8 /* MediaPlayer.framework in Frameworks */,
+				F1DB6C5016B125CB004D3FF8 /* CoreMedia.framework in Frameworks */,
+				F1DB6C4E16B125C4004D3FF8 /* AssetsLibrary.framework in Frameworks */,
+				F1DB6C4C16B125BD004D3FF8 /* AVFoundation.framework in Frameworks */,
+				F1DB6C2916B12533004D3FF8 /* UIKit.framework in Frameworks */,
+				F1DB6C2B16B12533004D3FF8 /* Foundation.framework in Frameworks */,
+				F1DB6C2D16B12533004D3FF8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1DB6C1916B12533004D3FF8 = {
+			isa = PBXGroup;
+			children = (
+				F1DB6C2E16B12533004D3FF8 /* TrailerMe */,
+				F1DB6C2716B12533004D3FF8 /* Frameworks */,
+				F1DB6C2516B12533004D3FF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1DB6C2516B12533004D3FF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1DB6C2416B12533004D3FF8 /* TrailerMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1DB6C2716B12533004D3FF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1DB6C4D16B125C4004D3FF8 /* AssetsLibrary.framework */,
+				F1DB6C4B16B125BD004D3FF8 /* AVFoundation.framework */,
+				F1DB6C2C16B12533004D3FF8 /* CoreGraphics.framework */,
+				F1DB6C4F16B125CB004D3FF8 /* CoreMedia.framework */,
+				F1DB6C2A16B12533004D3FF8 /* Foundation.framework */,
+				F1DB6C5116B125D0004D3FF8 /* MediaPlayer.framework */,
+				F1DB6C5316B125D4004D3FF8 /* MobileCoreServices.framework */,
+				F1DB6C5516B125D8004D3FF8 /* QuartzCore.framework */,
+				F1DB6C2816B12533004D3FF8 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1DB6C2E16B12533004D3FF8 /* TrailerMe */ = {
+			isa = PBXGroup;
+			children = (
+				3975893E18416732009AF0B5 /* AppDelegate.h */,
+				3975893F18416732009AF0B5 /* AppDelegate.m */,
+				39758946184167AA009AF0B5 /* MainStoryboard.storyboard */,
+				3975893C18416732009AF0B5 /* ThemeSelectionViewController.h */,
+				3975893D18416732009AF0B5 /* ThemeSelectionViewController.m */,
+				3975893918416732009AF0B5 /* AddHorrorThemeViewController.h */,
+				3975893A18416732009AF0B5 /* AddHorrorThemeViewController.m */,
+				3975893518416732009AF0B5 /* AddActionThemeViewController.h */,
+				3975893618416732009AF0B5 /* AddActionThemeViewController.m */,
+				3975893718416732009AF0B5 /* AddComedyThemeViewController.h */,
+				3975893818416732009AF0B5 /* AddComedyThemeViewController.m */,
+				F1DB6C2F16B12533004D3FF8 /* Supporting Files */,
+			);
+			name = TrailerMe;
+			path = TrailerMe;
+			sourceTree = "<group>";
+		};
+		F1DB6C2F16B12533004D3FF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3975895218416843009AF0B5 /* InfoPlist.strings */,
+				3975894B184167FF009AF0B5 /* TrailerMe-Prefix.pch */,
+				3975894C184167FF009AF0B5 /* Default-568h@2x.png */,
+				3975894D184167FF009AF0B5 /* Default.png */,
+				3975894E184167FF009AF0B5 /* Default@2x.png */,
+				39758949184167DF009AF0B5 /* TrailerMe-Info.plist */,
+				3975893B18416732009AF0B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1DB6C2316B12533004D3FF8 /* TrailerMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1DB6C4816B12533004D3FF8 /* Build configuration list for PBXNativeTarget "TrailerMe" */;
+			buildPhases = (
+				F1DB6C2016B12533004D3FF8 /* Sources */,
+				F1DB6C2116B12533004D3FF8 /* Frameworks */,
+				F1DB6C2216B12533004D3FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrailerMe;
+			productName = TrailerMe;
+			productReference = F1DB6C2416B12533004D3FF8 /* TrailerMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1DB6C1B16B12533004D3FF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = com.datainvent;
+			};
+			buildConfigurationList = F1DB6C1E16B12533004D3FF8 /* Build configuration list for PBXProject "TrailerMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F1DB6C1916B12533004D3FF8;
+			productRefGroup = F1DB6C2516B12533004D3FF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1DB6C2316B12533004D3FF8 /* TrailerMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1DB6C2216B12533004D3FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39758951184167FF009AF0B5 /* Default@2x.png in Resources */,
+				3975895418416843009AF0B5 /* InfoPlist.strings in Resources */,
+				39758948184167AA009AF0B5 /* MainStoryboard.storyboard in Resources */,
+				3975894F184167FF009AF0B5 /* Default-568h@2x.png in Resources */,
+				3975894A184167DF009AF0B5 /* TrailerMe-Info.plist in Resources */,
+				39758950184167FF009AF0B5 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1DB6C2016B12533004D3FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3975894318416732009AF0B5 /* main.m in Sources */,
+				3975894218416732009AF0B5 /* AddHorrorThemeViewController.m in Sources */,
+				3975894118416732009AF0B5 /* AddComedyThemeViewController.m in Sources */,
+				3975894518416732009AF0B5 /* AppDelegate.m in Sources */,
+				3975894418416732009AF0B5 /* ThemeSelectionViewController.m in Sources */,
+				3975894018416732009AF0B5 /* AddActionThemeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39758946184167AA009AF0B5 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39758947184167AA009AF0B5 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		3975895218416843009AF0B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3975895318416843009AF0B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1DB6C4616B12533004D3FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1DB6C4716B12533004D3FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1DB6C4916B12533004D3FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrailerMe/TrailerMe-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/TrailerMe/TrailerMe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = TrailerMe;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F1DB6C4A16B12533004D3FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrailerMe/TrailerMe-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/TrailerMe/TrailerMe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = TrailerMe;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1DB6C1E16B12533004D3FF8 /* Build configuration list for PBXProject "TrailerMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1DB6C4616B12533004D3FF8 /* Debug */,
+				F1DB6C4716B12533004D3FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1DB6C4816B12533004D3FF8 /* Build configuration list for PBXNativeTarget "TrailerMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1DB6C4916B12533004D3FF8 /* Debug */,
+				F1DB6C4A16B12533004D3FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1DB6C1B16B12533004D3FF8 /* Project object */;
+}
