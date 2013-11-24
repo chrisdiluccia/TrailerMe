@@ -43,15 +43,6 @@
                                     <segue destination="X6H-3Z-C2Y" kind="push" id="LoP-9D-OSA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gN5-V4-qoN">
-                                <rect key="frame" x="86" y="78" width="144" height="44"/>
-                                <state key="normal" title="Add Video Asset">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loadAsset:" destination="a6g-NZ-KFz" eventType="touchUpInside" id="oDo-nY-w06"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -59,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="671"/>
+            <point key="canvasLocation" x="590" y="677"/>
         </scene>
         <!--Add Action Theme View Controller-->
         <scene sceneID="XJ0-Ut-0Ze">
@@ -84,6 +75,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="generateOutput:" destination="WA9-t1-aeL" eventType="touchUpInside" id="mgd-v7-K5E"/>
                                     <action selector="generateOutput:" destination="X6H-3Z-C2Y" eventType="touchUpInside" id="z5g-lC-awY"/>
                                 </connections>
                             </button>
@@ -100,13 +92,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="X6H-3Z-C2Y" id="FuZ-Df-YdD"/>
+                                    <outlet property="delegate" destination="WA9-t1-aeL" id="hTE-aZ-EtF"/>
                                 </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jAl-gT-81r"/>
+                    <connections>
+                        <outlet property="subTitle1" destination="Wv9-PB-MLQ" id="CL3-I8-dqb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hx-Eg-8qS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,6 +161,36 @@
             </objects>
             <point key="canvasLocation" x="1082" y="1192"/>
         </scene>
+        <!--Record Video View Controller-->
+        <scene sceneID="dBS-Ep-MwA">
+            <objects>
+                <viewController id="Xzm-8O-Msc" customClass="RecordVideoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ft-un-fMv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kxX-Dr-uRT">
+                                <rect key="frame" x="116" y="201" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record Trailer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Record:" destination="Xzm-8O-Msc" eventType="touchUpInside" id="2ce-be-dIr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OAj-8A-gMO"/>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="Push Theme VC" id="f9p-dF-ZH3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NSk-Ky-GVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24" y="677"/>
+        </scene>
         <!--Add Horror Theme View Controller-->
         <scene sceneID="9Xo-H8-BPf">
             <objects>
@@ -185,7 +210,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pmL-R8-Pzk">
                                 <rect key="frame" x="88" y="372" width="143" height="44"/>
-                                <state key="normal" title="Generated Trailer!">
+                                <state key="normal" title="Generate Trailer!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -204,11 +229,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="a6g-NZ-KFz" id="JlS-qi-iEq"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8HG-3n-PYw"/>
+                    <connections>
+                        <outlet property="subTitle1" destination="1Ze-k1-rxp" id="JmZ-o4-rwu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdr-Dj-MON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,12 +256,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="bmw-tw-Y9P"/>
+                        <segue destination="Xzm-8O-Msc" kind="relationship" relationship="rootViewController" id="3YC-oS-cF1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAJ-4M-fso" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="671"/>
+            <point key="canvasLocation" x="-472" y="677"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

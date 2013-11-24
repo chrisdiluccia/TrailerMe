@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrailerMe/AddComedyThemeViewController.m"
-            timestampString = "406942897.600308"
+            filePath = "TrailerMe/RecordVideoViewController.m"
+            timestampString = "407019964.664984"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-generateOutput:"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "-alertView:clickedButtonAtIndex:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

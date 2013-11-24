@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391694221842984C00B34135 /* RecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391694211842984C00B34135 /* RecordVideoViewController.m */; };
 		3975894018416732009AF0B5 /* AddActionThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893618416732009AF0B5 /* AddActionThemeViewController.m */; };
 		3975894118416732009AF0B5 /* AddComedyThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893818416732009AF0B5 /* AddComedyThemeViewController.m */; };
 		3975894218416732009AF0B5 /* AddHorrorThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893A18416732009AF0B5 /* AddHorrorThemeViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		391694201842984C00B34135 /* RecordVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordVideoViewController.h; sourceTree = "<group>"; };
+		391694211842984C00B34135 /* RecordVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordVideoViewController.m; sourceTree = "<group>"; };
 		3975893518416732009AF0B5 /* AddActionThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddActionThemeViewController.h; path = TrailerMe/AddActionThemeViewController.h; sourceTree = SOURCE_ROOT; };
 		3975893618416732009AF0B5 /* AddActionThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddActionThemeViewController.m; path = TrailerMe/AddActionThemeViewController.m; sourceTree = SOURCE_ROOT; };
 		3975893718416732009AF0B5 /* AddComedyThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddComedyThemeViewController.h; path = TrailerMe/AddComedyThemeViewController.h; sourceTree = SOURCE_ROOT; };
@@ -120,6 +123,8 @@
 				3975893E18416732009AF0B5 /* AppDelegate.h */,
 				3975893F18416732009AF0B5 /* AppDelegate.m */,
 				39758946184167AA009AF0B5 /* MainStoryboard.storyboard */,
+				391694201842984C00B34135 /* RecordVideoViewController.h */,
+				391694211842984C00B34135 /* RecordVideoViewController.m */,
 				3975893C18416732009AF0B5 /* ThemeSelectionViewController.h */,
 				3975893D18416732009AF0B5 /* ThemeSelectionViewController.m */,
 				3975893918416732009AF0B5 /* AddHorrorThemeViewController.h */,
@@ -130,7 +135,6 @@
 				3975893818416732009AF0B5 /* AddComedyThemeViewController.m */,
 				F1DB6C2F16B12533004D3FF8 /* Supporting Files */,
 			);
-			name = TrailerMe;
 			path = TrailerMe;
 			sourceTree = "<group>";
 		};
@@ -221,6 +225,7 @@
 				3975894518416732009AF0B5 /* AppDelegate.m in Sources */,
 				3975894418416732009AF0B5 /* ThemeSelectionViewController.m in Sources */,
 				3975894018416732009AF0B5 /* AddActionThemeViewController.m in Sources */,
+				391694221842984C00B34135 /* RecordVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
