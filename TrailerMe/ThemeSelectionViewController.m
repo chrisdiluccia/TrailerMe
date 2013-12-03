@@ -78,10 +78,22 @@
     [alert show];
     return;
   }
-
+    
   // 2 - Create AVMutableComposition object. This object will hold your AVMutableCompositionTrack instances.
   AVMutableComposition *mixComposition = [[AVMutableComposition alloc] init];
-
+  ///////////////////////
+   
+    //load our audio asset
+    AVURLAsset* audioAsset =
+     [AVURLAsset URLAssetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource: @"inception_extended" ofType: @"mp3"]] options:nil];
+     
+     //Audio track
+    AVMutableCompositionTrack *audioTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeAudio
+                                                                        preferredTrackID:kCMPersistentTrackID_Invalid];
+    [audioTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, self.videoAsset.duration)
+                        ofTrack:[[audioAsset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0] atTime:kCMTimeZero error:nil];
+  
+  ///////////////////////
   // 3 - Video track
   AVMutableCompositionTrack *videoTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo
                                                                       preferredTrackID:kCMPersistentTrackID_Invalid];

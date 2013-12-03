@@ -30,7 +30,7 @@
     [subtitle1Text setFont:@"Helvetica-Bold"];
     [subtitle1Text setFontSize:14];
     [subtitle1Text setFrame:CGRectMake(0, 0, size.width, 100)];
-    [subtitle1Text setString:[NSString stringWithFormat:@"%@%@", @"Applied horror theme to ", _subTitle1.text]];
+    [subtitle1Text setString:[NSString stringWithFormat:@"%@%@", @"Applied horror theme to: ", _subTitle1.text]];
     [subtitle1Text setAlignmentMode:kCAAlignmentCenter];
     [subtitle1Text setForegroundColor:[[UIColor whiteColor] CGColor]];
     
@@ -49,7 +49,6 @@
     
     composition.animationTool = [AVVideoCompositionCoreAnimationTool
                                  videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
-    
 }
 
 

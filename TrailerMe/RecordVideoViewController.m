@@ -86,10 +86,8 @@
     [self dismissModalViewControllerAnimated:NO];
     
     // Handle a movie capture
-    if (CFStringCompare ((__bridge_retained CFStringRef) mediaType, kUTTypeMovie, 0)
-        == kCFCompareEqualTo) {
-        
-        
+    if (CFStringCompare ((__bridge_retained CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo)
+    {
         // get path of newly created movie
         NSString *moviePath = [[info objectForKey:
                                 UIImagePickerControllerMediaURL] path];
@@ -118,21 +116,13 @@
 {
     if (buttonIndex == 0)
     {
-        //means share button pressed
-        //write your code here to do whatever you want to do once the share button is pressed
         //push theme selection view controller
         [self performSegueWithIdentifier:@"Push Theme VC" sender:self];
         
-        /*ThemeSelectionViewController *viewController = [[ThemeSelectionViewController alloc]init];
-        
-        [self.navigationController pushViewController:viewController animated:YES];*/
     }
     if(buttonIndex == 1)
     {
-        // means apple button pressed
-        // write your code here to do whatever you want to do once the apple button is pressed
     }
-        // and so on for the last button
 }
 
 @end
