@@ -14,7 +14,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        NSLog(@"The moviePath received by the ThemeSelectionVC (now in the theme .m file) is: %@", self.moviePath);
     }
     return self;
 }
@@ -28,8 +27,6 @@
         
         // Pass the information to your destination view
         [addHorrorThemeViewController setMoviePath:self.moviePath];
-        
-        NSLog(@"The moviePath received by the HorrorThemeVC (but still in the theme .m file) is: %@", addHorrorThemeViewController.moviePath);
     }
     else if ([[segue identifier] isEqualToString:@"Push Action Theme VC"])
     {
@@ -38,8 +35,6 @@
         
         // Pass the information to your destination view
         [addActionThemeViewController setMoviePath:self.moviePath];
-        
-        NSLog(@"The moviePath received by the ActionSelectionVC (but still in the theme .m file) is: %@", addActionThemeViewController.moviePath);
     }
     else if ([[segue identifier] isEqualToString:@"Push Thriller Theme VC"])
     {
@@ -48,8 +43,6 @@
         
         // Pass the information to your destination view
         [addThrillerThemeViewController setMoviePath:self.moviePath];
-        
-        NSLog(@"The moviePath received by the ThemeSelectionVC (but still in the theme .m file) is: %@", addThrillerThemeViewController.moviePath);
     }
 }
 

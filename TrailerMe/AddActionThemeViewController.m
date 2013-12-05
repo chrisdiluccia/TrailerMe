@@ -10,7 +10,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        NSLog(@"The moviePath received by the Action Theme VC (now in the horror .m file) is: %@", self.moviePath);
     }
     return self;
 }
@@ -73,8 +72,12 @@
 
 - (void)videoOutput
 {
+    //pass our recorded video off to our videoAsset
+    self.videoAsset = [AVAsset assetWithURL: [NSURL fileURLWithPath:self.moviePath]];
+    
     // 1 - Early exit if there's no video file selected
-    if (!self.videoAsset) {
+    if (!self.videoAsset)
+    {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please Load a Video Asset First"
                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];

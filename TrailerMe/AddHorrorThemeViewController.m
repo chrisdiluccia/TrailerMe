@@ -11,7 +11,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        NSLog(@"The moviePath received by the Horror Theme VC (now in the horror .m file) is: %@", self.moviePath);
     }
     return self;
 }
@@ -71,14 +70,15 @@
     }
 }
  
- - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
- [self dismissViewControllerAnimated:YES completion:nil];
- }
+ - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
  
  - (void)videoOutput
  {
      //pass our recorded video off to our videoAsset
-     self.videoAsset = [AVAsset assetWithURL: [NSURL URLWithString:self.moviePath]];
+     self.videoAsset = [AVAsset assetWithURL: [NSURL fileURLWithPath:self.moviePath]];
      
      // 1 - Early exit if there's no video file selected
      if (!self.videoAsset)
