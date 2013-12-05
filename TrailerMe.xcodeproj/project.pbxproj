@@ -20,6 +20,10 @@
 		39758950184167FF009AF0B5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3975894D184167FF009AF0B5 /* Default.png */; };
 		39758951184167FF009AF0B5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3975894E184167FF009AF0B5 /* Default@2x.png */; };
 		3975895418416843009AF0B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3975895218416843009AF0B5 /* InfoPlist.strings */; };
+		3990F47218500B1300C02C30 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3990F46E18500B1300C02C30 /* Icon.png */; };
+		3990F47318500B1300C02C30 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3990F46F18500B1300C02C30 /* Icon-72.png */; };
+		3990F47418500B1300C02C30 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3990F47018500B1300C02C30 /* Icon-72@2x.png */; };
+		3990F47518500B1300C02C30 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3990F47118500B1300C02C30 /* Icon@2x.png */; };
 		39E28D3D1850077900E11D42 /* action.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 39E28D3C1850077900E11D42 /* action.m4a */; };
 		39F07440184D7E4E00594D7A /* inception_extended.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39F0743F184D7E4E00594D7A /* inception_extended.mp3 */; };
 		39F1AC1718500140000EF585 /* thriller.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 39F1AC1618500140000EF585 /* thriller.m4a */; };
@@ -55,6 +59,10 @@
 		3975894D184167FF009AF0B5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = TrailerMe/Default.png; sourceTree = SOURCE_ROOT; };
 		3975894E184167FF009AF0B5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "TrailerMe/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		3975895318416843009AF0B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = TrailerMe/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		3990F46E18500B1300C02C30 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3990F46F18500B1300C02C30 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		3990F47018500B1300C02C30 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		3990F47118500B1300C02C30 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		39E28D3C1850077900E11D42 /* action.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = action.m4a; sourceTree = "<group>"; };
 		39F0743F184D7E4E00594D7A /* inception_extended.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inception_extended.mp3; sourceTree = "<group>"; };
 		39F1AC1618500140000EF585 /* thriller.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = thriller.m4a; sourceTree = "<group>"; };
@@ -147,6 +155,10 @@
 		F1DB6C2F16B12533004D3FF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3990F46E18500B1300C02C30 /* Icon.png */,
+				3990F46F18500B1300C02C30 /* Icon-72.png */,
+				3990F47018500B1300C02C30 /* Icon-72@2x.png */,
+				3990F47118500B1300C02C30 /* Icon@2x.png */,
 				39E28D3C1850077900E11D42 /* action.m4a */,
 				39F1AC1618500140000EF585 /* thriller.m4a */,
 				39F0743F184D7E4E00594D7A /* inception_extended.mp3 */,
@@ -213,7 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39E28D3D1850077900E11D42 /* action.m4a in Resources */,
+				3990F47518500B1300C02C30 /* Icon@2x.png in Resources */,
 				39758951184167FF009AF0B5 /* Default@2x.png in Resources */,
+				3990F47418500B1300C02C30 /* Icon-72@2x.png in Resources */,
+				3990F47218500B1300C02C30 /* Icon.png in Resources */,
+				3990F47318500B1300C02C30 /* Icon-72.png in Resources */,
 				3975895418416843009AF0B5 /* InfoPlist.strings in Resources */,
 				39F1AC1718500140000EF585 /* thriller.m4a in Resources */,
 				39758948184167AA009AF0B5 /* MainStoryboard.storyboard in Resources */,
