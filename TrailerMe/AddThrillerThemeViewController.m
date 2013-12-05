@@ -3,11 +3,17 @@
 
 #import "AddThrillerThemeViewController.h"
 
-@interface AddThrillerThemeViewController ()
-
-@end
-
 @implementation AddThrillerThemeViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+        NSLog(@"The moviePath received by the Thriller Theme VC (now in the horror .m file) is: %@", self.moviePath);
+    }
+    return self;
+}
 
 - (IBAction)loadAsset:(id)sender {
     [self startMediaBrowserFromViewController:self usingDelegate:self];

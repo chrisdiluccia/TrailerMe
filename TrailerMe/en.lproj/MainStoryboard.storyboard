@@ -20,7 +20,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="a6g-NZ-KFz" kind="push" id="E2J-8B-uVu"/>
+                                    <segue destination="a6g-NZ-KFz" kind="push" identifier="Push Horror Theme VC" id="E2J-8B-uVu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KOu-OM-p4G">
@@ -30,7 +30,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WA9-t1-aeL" kind="push" id="2rs-h6-wXs"/>
+                                    <segue destination="WA9-t1-aeL" kind="push" identifier="Push Action Theme VC" id="2rs-h6-wXs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rct-Vq-zee">
@@ -40,7 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="X6H-3Z-C2Y" kind="push" id="LoP-9D-OSA"/>
+                                    <segue destination="X6H-3Z-C2Y" kind="push" identifier="Push Thriller Theme VC" id="LoP-9D-OSA"/>
                                 </connections>
                             </button>
                         </subviews>

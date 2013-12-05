@@ -4,7 +4,15 @@
 #import "RecordVideoViewController.h"
 #import "ThemeSelectionViewController.h"
 
+@interface RecordVideoViewController()
+{
+    NSString *moviePath;
+}
+
+@end
+
 @implementation RecordVideoViewController
+
 - (IBAction)Record:(id)sender {
     [self startCameraControllerFromViewController: self
                                     usingDelegate: self];
@@ -76,7 +84,6 @@
     return YES;
 }
 
-
 // This method is called as soon as the user accepts the video capture
 - (void) imagePickerController: (UIImagePickerController *) picker
  didFinishPickingMediaWithInfo: (NSDictionary *) info {
@@ -89,39 +96,25 @@
     if (CFStringCompare ((__bridge_retained CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo)
     {
         // get path of newly created movie
-        NSString *moviePath = [[info objectForKey:
+        moviePath = [[info objectForKey:
                                 UIImagePickerControllerMediaURL] path];
+        NSLog(@"The moviePath during initial capture in the RecordViewController is: %@", moviePath);
         
-        //check if it's compatible with the photo album so we can save it there
-        if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum (moviePath))
-        {
-            //Now save the video that is stored in the path "moviePath" to the Photo Album on the iPhone
-            UISaveVideoAtPathToSavedPhotosAlbum (moviePath,self, @selector(video:didFinishSavingWithError:contextInfo:), nil);
-        }
-        
-    }
-}
-
-- (void)video:(NSString*)videoPath didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo
-{
-    if (error) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Video Saving Failed"  delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil, nil];
-        [alert show];
-    }else{
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Video Saved" message:@"Now select a trailer theme"  delegate:self cancelButtonTitle:@"Continue" otherButtonTitles: nil];
-        [alert show];
-    }
-}
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == 0)//IF we clicked continue after the video saved
-    {
         //push theme selection view controller
         [self performSegueWithIdentifier:@"Push Theme VC" sender:self];
-        
     }
-    if(buttonIndex == 1)
+}
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"Push Theme VC"])
     {
+        // Get destination view
+        ThemeSelectionViewController *themeSelectionViewController = [segue destinationViewController];
+        
+        // Pass the information to your destination view
+        [themeSelectionViewController setMoviePath:moviePath];
+        
+        NSLog(@"The moviePath received by the ThemeSelectionVC (but still in the record .m file) is: %@", themeSelectionViewController.moviePath);
     }
 }
 

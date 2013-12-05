@@ -9,4 +9,6 @@
 
 @interface ThemeSelectionViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property(nonatomic, retain) NSString *moviePath;
+
 @end

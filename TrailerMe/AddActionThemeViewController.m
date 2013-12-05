@@ -3,11 +3,17 @@
 
 #import "AddActionThemeViewController.h"
 
-@interface AddActionThemeViewController ()
-
-@end
-
 @implementation AddActionThemeViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+        NSLog(@"The moviePath received by the Action Theme VC (now in the horror .m file) is: %@", self.moviePath);
+    }
+    return self;
+}
 
 - (IBAction)loadAsset:(id)sender {
     [self startMediaBrowserFromViewController:self usingDelegate:self];

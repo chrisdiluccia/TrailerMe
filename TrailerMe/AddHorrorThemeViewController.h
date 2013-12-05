@@ -2,12 +2,12 @@
 //  AddHorrorThemeViewController.h
 
 #import "ThemeSelectionViewController.h"
-#import "RecordVideoViewController.h"
 
 @interface AddHorrorThemeViewController : ThemeSelectionViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *subTitle1;
 @property(nonatomic, strong) AVAsset *videoAsset;
+@property(nonatomic, retain) NSString *moviePath;
 
 - (IBAction)loadAsset:(id)sender;
 - (IBAction)generateOutput:(id)sender;
