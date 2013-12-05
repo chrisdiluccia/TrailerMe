@@ -9,10 +9,6 @@
 
 @implementation ThemeSelectionViewController
 
-- (IBAction)loadAsset:(id)sender {
-    [self startMediaBrowserFromViewController:self usingDelegate:self];
-}
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -21,7 +17,7 @@
     }
     return self;
 }
-
+/*
 - (BOOL)startMediaBrowserFromViewController:(UIViewController*)controller usingDelegate:(id)delegate {
   // 1 - Validations
   if (([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum] == NO)
@@ -190,6 +186,6 @@
       }];
     }
   }
-}
+}*/
 
 @end

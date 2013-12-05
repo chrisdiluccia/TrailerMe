@@ -1,13 +1,13 @@
 //
-//  AddActionThemeViewController.m
+//  AddThrillerThemeViewController.m
 
-#import "AddActionThemeViewController.h"
+#import "AddThrillerThemeViewController.h"
 
-@interface AddActionThemeViewController ()
+@interface AddThrillerThemeViewController ()
 
 @end
 
-@implementation AddActionThemeViewController
+@implementation AddThrillerThemeViewController
 
 - (IBAction)loadAsset:(id)sender {
     [self startMediaBrowserFromViewController:self usingDelegate:self];
@@ -81,7 +81,7 @@
     
     //load our audio asset
     AVURLAsset* audioAsset =
-    [AVURLAsset URLAssetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource: @"inception_extended" ofType: @"mp3"]] options:nil];
+    [AVURLAsset URLAssetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource: @"thriller" ofType: @"m4a"]] options:nil];
     
     //Audio track
     AVMutableCompositionTrack *audioTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeAudio
@@ -186,7 +186,7 @@
                     }
                     else
                     {
-                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Action Theme Applied!" message:@"Check your photo album"
+                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thriller Theme Applied!" message:@"Check your photo album"
                                                                        delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                         [alert show];
                     }
@@ -204,7 +204,7 @@
     [subtitle1Text setFont:@"Helvetica-Bold"];
     [subtitle1Text setFontSize:14];
     [subtitle1Text setFrame:CGRectMake(0, 0, size.width, 100)];
-    [subtitle1Text setString:[NSString stringWithFormat:@"%@%@", @"Applied action theme to: ", _subTitle1.text]];
+    [subtitle1Text setString:[NSString stringWithFormat:@"%@%@", @"Applied thriller theme to: ", _subTitle1.text]];
     [subtitle1Text setAlignmentMode:kCAAlignmentCenter];
     [subtitle1Text setForegroundColor:[[UIColor whiteColor] CGColor]];
     

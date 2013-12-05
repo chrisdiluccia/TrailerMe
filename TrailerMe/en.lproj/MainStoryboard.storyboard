@@ -36,7 +36,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rct-Vq-zee">
                                 <rect key="frame" x="64" y="241" width="193" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Comedy Theme">
+                                <state key="normal" title="Add Thriller Theme">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="1458" y="671"/>
         </scene>
-        <!--Add Comedy Theme View Controller-->
+        <!--Add Thriller Theme View Controller-->
         <scene sceneID="J2r-Pr-t7e">
             <objects>
-                <viewController id="X6H-3Z-C2Y" customClass="AddComedyThemeViewController" sceneMemberID="viewController">
+                <viewController id="X6H-3Z-C2Y" customClass="AddThrillerThemeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dDa-tb-0AW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

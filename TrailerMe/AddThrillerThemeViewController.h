@@ -1,10 +1,9 @@
 //
-//  AddHorrorThemeViewController.h
+//  AddComedyThemeViewController.h
 
 #import "ThemeSelectionViewController.h"
-#import "RecordVideoViewController.h"
 
-@interface AddHorrorThemeViewController : ThemeSelectionViewController
+@interface AddThrillerThemeViewController : ThemeSelectionViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *subTitle1;
 @property(nonatomic, strong) AVAsset *videoAsset;

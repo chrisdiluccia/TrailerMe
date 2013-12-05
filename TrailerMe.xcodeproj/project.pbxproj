@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		391694221842984C00B34135 /* RecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391694211842984C00B34135 /* RecordVideoViewController.m */; };
 		3975894018416732009AF0B5 /* AddActionThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893618416732009AF0B5 /* AddActionThemeViewController.m */; };
-		3975894118416732009AF0B5 /* AddComedyThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893818416732009AF0B5 /* AddComedyThemeViewController.m */; };
+		3975894118416732009AF0B5 /* AddThrillerThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893818416732009AF0B5 /* AddThrillerThemeViewController.m */; };
 		3975894218416732009AF0B5 /* AddHorrorThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893A18416732009AF0B5 /* AddHorrorThemeViewController.m */; };
 		3975894318416732009AF0B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893B18416732009AF0B5 /* main.m */; };
 		3975894418416732009AF0B5 /* ThemeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975893D18416732009AF0B5 /* ThemeSelectionViewController.m */; };
@@ -21,6 +21,7 @@
 		39758951184167FF009AF0B5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3975894E184167FF009AF0B5 /* Default@2x.png */; };
 		3975895418416843009AF0B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3975895218416843009AF0B5 /* InfoPlist.strings */; };
 		39F07440184D7E4E00594D7A /* inception_extended.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39F0743F184D7E4E00594D7A /* inception_extended.mp3 */; };
+		39F1AC1718500140000EF585 /* thriller.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 39F1AC1618500140000EF585 /* thriller.m4a */; };
 		F1DB6C2916B12533004D3FF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C2816B12533004D3FF8 /* UIKit.framework */; };
 		F1DB6C2B16B12533004D3FF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C2A16B12533004D3FF8 /* Foundation.framework */; };
 		F1DB6C2D16B12533004D3FF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DB6C2C16B12533004D3FF8 /* CoreGraphics.framework */; };
@@ -37,8 +38,8 @@
 		391694211842984C00B34135 /* RecordVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordVideoViewController.m; sourceTree = "<group>"; };
 		3975893518416732009AF0B5 /* AddActionThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddActionThemeViewController.h; path = TrailerMe/AddActionThemeViewController.h; sourceTree = SOURCE_ROOT; };
 		3975893618416732009AF0B5 /* AddActionThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddActionThemeViewController.m; path = TrailerMe/AddActionThemeViewController.m; sourceTree = SOURCE_ROOT; };
-		3975893718416732009AF0B5 /* AddComedyThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddComedyThemeViewController.h; path = TrailerMe/AddComedyThemeViewController.h; sourceTree = SOURCE_ROOT; };
-		3975893818416732009AF0B5 /* AddComedyThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddComedyThemeViewController.m; path = TrailerMe/AddComedyThemeViewController.m; sourceTree = SOURCE_ROOT; };
+		3975893718416732009AF0B5 /* AddThrillerThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddThrillerThemeViewController.h; path = TrailerMe/AddThrillerThemeViewController.h; sourceTree = SOURCE_ROOT; };
+		3975893818416732009AF0B5 /* AddThrillerThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddThrillerThemeViewController.m; path = TrailerMe/AddThrillerThemeViewController.m; sourceTree = SOURCE_ROOT; };
 		3975893918416732009AF0B5 /* AddHorrorThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddHorrorThemeViewController.h; path = TrailerMe/AddHorrorThemeViewController.h; sourceTree = SOURCE_ROOT; };
 		3975893A18416732009AF0B5 /* AddHorrorThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddHorrorThemeViewController.m; path = TrailerMe/AddHorrorThemeViewController.m; sourceTree = SOURCE_ROOT; };
 		3975893B18416732009AF0B5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TrailerMe/main.m; sourceTree = SOURCE_ROOT; };
@@ -54,6 +55,7 @@
 		3975894E184167FF009AF0B5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "TrailerMe/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		3975895318416843009AF0B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = TrailerMe/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		39F0743F184D7E4E00594D7A /* inception_extended.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inception_extended.mp3; sourceTree = "<group>"; };
+		39F1AC1618500140000EF585 /* thriller.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = thriller.m4a; sourceTree = "<group>"; };
 		F1DB6C2416B12533004D3FF8 /* TrailerMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailerMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1DB6C2816B12533004D3FF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1DB6C2A16B12533004D3FF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,8 +135,8 @@
 				3975893A18416732009AF0B5 /* AddHorrorThemeViewController.m */,
 				3975893518416732009AF0B5 /* AddActionThemeViewController.h */,
 				3975893618416732009AF0B5 /* AddActionThemeViewController.m */,
-				3975893718416732009AF0B5 /* AddComedyThemeViewController.h */,
-				3975893818416732009AF0B5 /* AddComedyThemeViewController.m */,
+				3975893718416732009AF0B5 /* AddThrillerThemeViewController.h */,
+				3975893818416732009AF0B5 /* AddThrillerThemeViewController.m */,
 				F1DB6C2F16B12533004D3FF8 /* Supporting Files */,
 			);
 			path = TrailerMe;
@@ -143,6 +145,7 @@
 		F1DB6C2F16B12533004D3FF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				39F1AC1618500140000EF585 /* thriller.m4a */,
 				39F0743F184D7E4E00594D7A /* inception_extended.mp3 */,
 				3975895218416843009AF0B5 /* InfoPlist.strings */,
 				3975894B184167FF009AF0B5 /* TrailerMe-Prefix.pch */,
@@ -208,6 +211,7 @@
 			files = (
 				39758951184167FF009AF0B5 /* Default@2x.png in Resources */,
 				3975895418416843009AF0B5 /* InfoPlist.strings in Resources */,
+				39F1AC1718500140000EF585 /* thriller.m4a in Resources */,
 				39758948184167AA009AF0B5 /* MainStoryboard.storyboard in Resources */,
 				3975894F184167FF009AF0B5 /* Default-568h@2x.png in Resources */,
 				3975894A184167DF009AF0B5 /* TrailerMe-Info.plist in Resources */,
@@ -225,7 +229,7 @@
 			files = (
 				3975894318416732009AF0B5 /* main.m in Sources */,
 				3975894218416732009AF0B5 /* AddHorrorThemeViewController.m in Sources */,
-				3975894118416732009AF0B5 /* AddComedyThemeViewController.m in Sources */,
+				3975894118416732009AF0B5 /* AddThrillerThemeViewController.m in Sources */,
 				3975894518416732009AF0B5 /* AppDelegate.m in Sources */,
 				3975894418416732009AF0B5 /* ThemeSelectionViewController.m in Sources */,
 				3975894018416732009AF0B5 /* AddActionThemeViewController.m in Sources */,

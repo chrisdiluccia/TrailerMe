@@ -114,7 +114,7 @@
 }
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (buttonIndex == 0)
+    if (buttonIndex == 0)//IF we clicked continue after the video saved
     {
         //push theme selection view controller
         [self performSegueWithIdentifier:@"Push Theme VC" sender:self];
