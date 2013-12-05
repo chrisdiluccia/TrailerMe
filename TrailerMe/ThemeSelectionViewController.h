@@ -9,11 +9,4 @@
 
 @interface ThemeSelectionViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-/*@property(nonatomic, strong) AVAsset *videoAsset;
-
-- (BOOL)startMediaBrowserFromViewController:(UIViewController*)controller usingDelegate:(id)delegate;
-- (void)exportDidFinish:(AVAssetExportSession*)session;
-- (void)applyVideoEffectsToComposition:(AVMutableVideoComposition *)composition size:(CGSize)size;
-- (void)videoOutput;
-*/
 @end

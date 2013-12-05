@@ -81,7 +81,7 @@
     
     //load our audio asset
     AVURLAsset* audioAsset =
-    [AVURLAsset URLAssetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource: @"inception_extended" ofType: @"mp3"]] options:nil];
+    [AVURLAsset URLAssetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource: @"action" ofType: @"m4a"]] options:nil];
     
     //Audio track
     AVMutableCompositionTrack *audioTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeAudio
