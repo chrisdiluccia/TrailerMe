@@ -72,6 +72,9 @@
 
 - (void)videoOutput
 {
+    //begin animation of activity indicator
+    [self.activity startAnimating];
+    
     //pass our recorded video off to our videoAsset
     self.videoAsset = [AVAsset assetWithURL: [NSURL fileURLWithPath:self.moviePath]];
     
@@ -189,12 +192,18 @@
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if (error)
                     {
+                        //stop animation of activity indicator
+                        [self.activity stopAnimating];
+                        
                         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Video Saving Failed"
                                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                         [alert show];
                     }
                     else
                     {
+                        //stop animation of activity indicator
+                        [self.activity stopAnimating];
+                        
                         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thriller Theme Applied!" message:@"Check your photo album"
                                                                        delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                         [alert show];

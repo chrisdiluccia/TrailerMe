@@ -98,7 +98,6 @@
         // get path of newly created movie
         moviePath = [[info objectForKey:
                                 UIImagePickerControllerMediaURL] path];
-        NSLog(@"The moviePath during initial capture in the RecordViewController is: %@", moviePath);
         
         //push theme selection view controller
         [self performSegueWithIdentifier:@"Push Theme VC" sender:self];
@@ -113,8 +112,6 @@
         
         // Pass the information to your destination view
         [themeSelectionViewController setMoviePath:moviePath];
-        
-        NSLog(@"The moviePath received by the ThemeSelectionVC (but still in the record .m file) is: %@", themeSelectionViewController.moviePath);
     }
 }
 

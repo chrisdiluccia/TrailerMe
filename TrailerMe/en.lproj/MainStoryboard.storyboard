@@ -61,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dCO-mF-jPR">
-                                <rect key="frame" x="106" y="103.5" width="144" height="44"/>
+                                <rect key="frame" x="106" y="75.5" width="144" height="44"/>
                                 <state key="normal" title="Add Video Asset">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -80,14 +80,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Add Title:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SW1-O8-mkE">
-                                <rect key="frame" x="87" y="273" width="183" height="21"/>
+                                <rect key="frame" x="87" y="166" width="183" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Wv9-PB-MLQ">
-                                <rect key="frame" x="41" y="306" width="267" height="30"/>
+                                <rect key="frame" x="41" y="199" width="267" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -95,11 +95,16 @@
                                     <outlet property="delegate" destination="WA9-t1-aeL" id="hTE-aZ-EtF"/>
                                 </connections>
                             </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="BJg-PN-cbc">
+                                <rect key="frame" x="164" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jAl-gT-81r"/>
                     <connections>
+                        <outlet property="activity" destination="BJg-PN-cbc" id="QPN-r4-Mai"/>
                         <outlet property="subTitle1" destination="Wv9-PB-MLQ" id="CL3-I8-dqb"/>
                     </connections>
                 </viewController>
@@ -149,11 +154,16 @@
                                     <outlet property="delegate" destination="X6H-3Z-C2Y" id="GwX-3w-Lr6"/>
                                 </connections>
                             </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="zfM-1w-gTN">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ecL-tK-JaA"/>
                     <connections>
+                        <outlet property="activity" destination="zfM-1w-gTN" id="XPg-0j-JX6"/>
                         <outlet property="subTitle1" destination="kfJ-qo-5dC" id="g15-Bj-u7v"/>
                     </connections>
                 </viewController>
@@ -218,14 +228,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Add Title:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ocu-Ty-1c9">
-                                <rect key="frame" x="66" y="179" width="183" height="21"/>
+                                <rect key="frame" x="66" y="168" width="183" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1Ze-k1-rxp">
-                                <rect key="frame" x="20" y="212" width="267" height="30"/>
+                                <rect key="frame" x="20" y="201" width="267" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -233,11 +243,16 @@
                                     <outlet property="delegate" destination="a6g-NZ-KFz" id="JlS-qi-iEq"/>
                                 </connections>
                             </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="z5l-SP-QNo">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8HG-3n-PYw"/>
                     <connections>
+                        <outlet property="activity" destination="z5l-SP-QNo" id="7vX-hO-Tcs"/>
                         <outlet property="subTitle1" destination="1Ze-k1-rxp" id="JmZ-o4-rwu"/>
                     </connections>
                 </viewController>
