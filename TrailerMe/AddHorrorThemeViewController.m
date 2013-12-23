@@ -82,7 +82,7 @@
      
      //pass our recorded video off to our videoAsset
      self.videoAsset = [AVAsset assetWithURL: [NSURL fileURLWithPath:self.moviePath]];
-     
+    
      // 1 - Early exit if there's no video file selected
      if (!self.videoAsset)
      {
@@ -187,7 +187,43 @@
          });
      }];
 }
- 
+
+- (void)applyVideoEffectsToComposition:(AVMutableVideoComposition *)composition size:(CGSize)size
+{
+    // 1 - Create the text layer
+    CATextLayer *subtitle1Text = [[CATextLayer alloc] init];
+    [subtitle1Text setFont:@"Helvetica-Bold"];
+    [subtitle1Text setFontSize:14];
+    [subtitle1Text setFrame:CGRectMake(0, 0, size.width, 100)];
+    [subtitle1Text setString:[NSString stringWithFormat:@"%@%@", @"Applied horror theme to: ", _subTitle1.text]];
+    [subtitle1Text setAlignmentMode:kCAAlignmentCenter];
+    [subtitle1Text setForegroundColor:[[UIColor whiteColor] CGColor]];
+    
+    // 2 - Create the overlay layer and add the text layer as a sublayer
+    CALayer *overlayLayer = [CALayer layer];
+    [overlayLayer addSublayer:subtitle1Text];
+    overlayLayer.frame = CGRectMake(0, 0, size.width, size.height);
+    [overlayLayer setMasksToBounds:YES];
+    
+    //3 - Create the fade animation and add it to the overlay Layer
+    CABasicAnimation* fadeAnim = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    fadeAnim.fromValue = [NSNumber numberWithFloat:0.0];
+    fadeAnim.toValue = [NSNumber numberWithFloat:1.0];
+    fadeAnim.duration = 3.0;
+    [overlayLayer addAnimation:fadeAnim forKey:@"opacity"];
+    
+    // 4 - Create the parent layer and video layer. Add the overlay layer as sublayer of the parent layer, then add the video layer as a sublayer of the parent layer
+    CALayer *parentLayer = [CALayer layer];
+    CALayer *videoLayer = [CALayer layer];
+    parentLayer.frame = CGRectMake(0, 0, size.width, size.height);
+    videoLayer.frame = CGRectMake(0, 0, size.width, size.height);
+    [parentLayer addSublayer:videoLayer];
+    [parentLayer addSublayer:overlayLayer];
+    
+    composition.animationTool = [AVVideoCompositionCoreAnimationTool
+                                 videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
+}
+
  - (void)exportDidFinish:(AVAssetExportSession*)session
 {
 
@@ -223,33 +259,4 @@
         }
     }
 }
-
-- (void)applyVideoEffectsToComposition:(AVMutableVideoComposition *)composition size:(CGSize)size
-{
-    // 1 - Set up the text layer
-    CATextLayer *subtitle1Text = [[CATextLayer alloc] init];
-    [subtitle1Text setFont:@"Helvetica-Bold"];
-    [subtitle1Text setFontSize:14];
-    [subtitle1Text setFrame:CGRectMake(0, 0, size.width, 100)];
-    [subtitle1Text setString:[NSString stringWithFormat:@"%@%@", @"Applied horror theme to: ", _subTitle1.text]];
-    [subtitle1Text setAlignmentMode:kCAAlignmentCenter];
-    [subtitle1Text setForegroundColor:[[UIColor whiteColor] CGColor]];
-    
-    // 2 - The usual overlay
-    CALayer *overlayLayer = [CALayer layer];
-    [overlayLayer addSublayer:subtitle1Text];
-    overlayLayer.frame = CGRectMake(0, 0, size.width, size.height);
-    [overlayLayer setMasksToBounds:YES];
-    
-    CALayer *parentLayer = [CALayer layer];
-    CALayer *videoLayer = [CALayer layer];
-    parentLayer.frame = CGRectMake(0, 0, size.width, size.height);
-    videoLayer.frame = CGRectMake(0, 0, size.width, size.height);
-    [parentLayer addSublayer:videoLayer];
-    [parentLayer addSublayer:overlayLayer];
-    
-    composition.animationTool = [AVVideoCompositionCoreAnimationTool
-                                 videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
-}
-
 @end

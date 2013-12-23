@@ -2,6 +2,7 @@
 //  AddHorrorThemeViewController.h
 
 #import "ThemeSelectionViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface AddHorrorThemeViewController : ThemeSelectionViewController
 
